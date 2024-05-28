@@ -1,0 +1,42 @@
+html{
+    font-size: 16px;
+}
+header{
+    margin: 0 24px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.desktop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav.desktop h1{
+    margin-right: 2rem;
+}
+nav.desktop ul{
+    display: flex;
+    list-style: none;  /*removes default bullet points*/
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+nav.desktop ul li{
+    margin-right: 1rem;
+}
+nav.desktop ul li a{
+    text-decoration: none;
+    color: black;
+}
+.colmar{
+    color:black;
+}
+.academy{
+    color:gray;
+}
