@@ -1,42 +1,66 @@
 html{
     font-size: 16px;
+    font-family: Helvetica;
 }
+/* header */
 header{
-    margin: 0 24px;
-    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+.clogo{
+    margin-left: 1.5rem;
+    width: 40px;
+    height: auto;
+
+}
+.desktop{
+    display: flex;
     width: 100%;
-    z-index: 100;
+    justify-content: flex-end;
 }
-header .content{
+.colmaracademy{
+    height: 32px;
+}
+.desktop ul{
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-nav.desktop{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-nav.desktop h1{
-    margin-right: 2rem;
-}
-nav.desktop ul{
-    display: flex;
-    list-style: none;  /*removes default bullet points*/
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-}
-nav.desktop ul li{
+.desktop ul li{
     margin-right: 1rem;
 }
-nav.desktop ul li a{
+.desktop ul li a{
     text-decoration: none;
     color: black;
 }
 .colmar{
-    color:black;
+    color: darkslategray;
 }
 .academy{
-    color:gray;
+    color: gray;
+}
+header .mobile{
+    display: none;
+}
+.mobile ul{
+    list-style-type:none;
+}
+@media only screen and (max-width: 600px){
+    header .colmaracademy{
+        display: none;
+    }
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: flex;
+        width: 100%;
+    }
+    header .mobile ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
 }
