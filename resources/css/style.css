@@ -46,6 +46,51 @@ header .mobile{
 .mobile ul{
     list-style-type:none;
 }
+/* Part2 */
+.banner{
+    width: 60%;
+    margin: 32px 24px;
+}
+.part2{
+    background-color: silver;
+    display: flex;
+    width: 100%;
+}
+.somethingNew{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    padding-right: 2.5rem;
+    
+}
+.somethingNew h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #181818;
+    padding-right: 8px;
+
+}
+.somethingNew h2{
+    font-size: 1.5rem;
+    color: darkslategrey;
+}
+.button{
+    border-style: solid;
+    border-color:#222;
+    color:white;
+    background-color: #222;
+    height: 2rem;
+    width:80%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+.part2mobile{
+    display: none;
+}
+
+/* Desktop or Mobile */
 @media only screen and (max-width: 600px){
     header .colmaracademy{
         display: none;
@@ -62,5 +107,40 @@ header .mobile{
         justify-content: space-around;
         align-items: center;
         width: 100%;
+    }
+    .part2{
+        display: none;
+    }
+    .part2mobile{
+        display: block;
+        background-color:silver;
+    }
+    .contentBannerMobile{
+        margin: 32px 16px;
+        padding-bottom: 32px;
+    }
+    .bannerMobile{
+        width:100%;
+        height: auto;
+    }
+    .part2mobile h1{
+        margin-bottom: 32px;
+        font-size: 2.6rem;
+        font-weight: bolder;
+        width: 80%;
+    }
+    .part2mobile h2{
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .buttonMobile{
+        color:white;
+        background-color: gray;
+        height: 2rem;
+        width:100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+        font-weight: bold;
     }
 }
