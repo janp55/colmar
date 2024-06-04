@@ -1,6 +1,17 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 html{
     font-size: 16px;
     font-family: Helvetica;
+}
+/* General Container Syles */
+header, .part2Desktop, .part3Desktop{
+    width: 100%;
+    margin: 0 auto; /*Center align */
+    max-width: 1500px; 
 }
 /* header */
 header{
@@ -46,52 +57,115 @@ header .mobile{
 .mobile ul{
     list-style-type:none;
 }
+
 /* Part2 */
-.banner{
+ .part2left, .part3left{
     width: 60%;
-    margin: 32px 24px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 24px;
+} 
+
+.banner, .info{ /*This one contains image from part 2 and part 3 to make sure they are aligned properly*/
+    width: 90%;
+    margin: 32px 24px 32px 0px;
 }
-.part2{
-    background-color: silver;
-    display: flex;
-    width: 100%;
-}
-.somethingNew{
+
+.part2right{ /*For part2 and part3 right portions*/
     display:flex;
+    width: 40%;
     flex-direction: column;
     justify-content: center; /* Horizontal centering */
-    padding-right: 2.5rem;
-    
+    padding-right: 5.7rem;
 }
-.somethingNew h1{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: #181818;
-    padding-right: 8px;
+.part3right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.part2Desktop{
+    background-color: lightgray;
+    display: flex;
 
 }
-.somethingNew h2{
+
+.part2right h1, .part2right h2, .button{
+    width: 86%;
+}
+.part2right h1{
+    font-size: 2.49rem;
+    font-weight: bolder;
+    color: #181818;
+    margin-bottom: 1.5rem;
+
+}
+.part2right h2{
     font-size: 1.5rem;
     color: darkslategrey;
+    margin-bottom: 1.5rem;
 }
 .button{
     border-style: solid;
     border-color:#222;
     color:white;
     background-color: #222;
-    height: 2rem;
-    width:80%;
+    height: 3rem;
     text-align: center;
+    justify-content: center;
     padding-top: 8px;
     padding-bottom: 8px;
-
 }
 .part2mobile{
     display: none;
 }
+/*Part3*/
+.part3Desktop{
+    background-color:white;
+    display: flex;
+}
+.part3left h1, .part3left p{
+    width: 90%;
+    margin-bottom: 24px;
+}
+.part3left h5{
+    margin-bottom: 32px;
+}
+.part3one, .part3two, .part3three{
+    display: flex;
+    img{
+        width: 35%;
+        height: auto;
+        margin: 16px;
+    }
+    div{
+        width: 65%;
+        margin: 16px 0px;
+        align-content: center;
+    }
+    h2{
+        margin-bottom: 8px;
+    }
+    p{
+        margin-bottom: 8px;
+        line-height: 1.3;
+        width: 100%;
+    }
+}
+.part3three{
+    background-color: lightgray;
+}
+.blue{
+    color: cornflowerblue;
+}
+.part3mobile{
+    display: none;
+}
 
-/* Desktop or Mobile */
-@media only screen and (max-width: 600px){
+/* Mobile */
+@media only screen and (max-width: 700px){ /*600px*/
     header .colmaracademy{
         display: none;
     }
@@ -108,7 +182,7 @@ header .mobile{
         align-items: center;
         width: 100%;
     }
-    .part2{
+    .part2Desktop{
         display: none;
     }
     .part2mobile{
@@ -125,7 +199,7 @@ header .mobile{
     }
     .part2mobile h1{
         margin-bottom: 32px;
-        font-size: 2.6rem;
+        font-size: 2.49rem;
         font-weight: bolder;
         width: 80%;
     }
@@ -142,5 +216,36 @@ header .mobile{
         padding-bottom: 8px;
         text-align: center;
         font-weight: bold;
+    }
+    /* part 3 */
+    .part3Desktop{
+        display: none;
+    }
+    .part3mobile{
+        margin: 16px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .pt3one, .pt3two, .pt3three{
+        display: flex;
+        flex-direction: column;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        div{
+            margin-left: 16px;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            max-width: 64%;
+            line-height: 1.33;
+        }
+        h2{margin-bottom:12px;}
+        p{margin-bottom: 10px;}
+    }
+    .blueM{
+        color: cornflowerblue;
     }
 }
