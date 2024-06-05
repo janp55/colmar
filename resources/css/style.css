@@ -8,7 +8,7 @@ html{
     font-family: Helvetica;
 }
 /* General Container Syles */
-header, .part2Desktop, .part3Desktop{
+header, .part2Desktop, .part3Desktop, .part4desktop{
     width: 100%;
     margin: 0 auto; /*Center align */
     max-width: 1500px; 
@@ -163,6 +163,54 @@ header .mobile{
 .part3mobile{
     display: none;
 }
+/*Part 4 */
+.part4mobile{
+    display: none;
+}
+.part4desktop{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.part4desktop h1{
+    text-align: center;
+    padding-top: 32px;
+}
+.p4options{
+    display: flex;
+    flex-wrap: wrap; /*This allows items to wrap (items that overflow go down to next row and so forth)*/
+    gap: 32px; /*adding some gap between items for better spacing*/
+    margin: 32px 72px;
+    div{
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        max-width: 330px;
+
+    }
+    div img{
+      height: auto;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    div h2{
+        margin-bottom: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    div h3{
+        margin-bottom: 8px;
+        font-weight: normal;
+        margin-left: 16px;
+    }
+    div p{
+        margin-bottom: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 700px){ /*600px*/
@@ -222,19 +270,17 @@ header .mobile{
         display: none;
     }
     .part3mobile{
-        margin: 16px;
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
+
 
     }
     .pt3one, .pt3two, .pt3three{
         display: flex;
         flex-direction: column;
-        img{
-            max-width: 100%;
-            height: auto;
-        }
+        margin-right:16px;
+        margin-left:16px;
         div{
             margin-left: 16px;
             margin-top: 32px;
@@ -245,7 +291,38 @@ header .mobile{
         h2{margin-bottom:12px;}
         p{margin-bottom: 10px;}
     }
+    .pt3one img, .pt3two img, .pt3three img{
+        max-width: 100%;
+        height: auto;
+    }
     .blueM{
         color: cornflowerblue;
+    }
+    /* Part 4*/
+    .part4desktop{
+        display: none;
+    }
+    .part4mobile{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 32px;
+        
+        h1{
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 2.6rem;
+            font-weight: bolder;
+        }
+        h2{
+            background-color: lightgray;
+            margin-bottom: 8px;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding-left: 16px;
+            padding-top:16px;
+            padding-bottom: 24px;
+        }
     }
 }
