@@ -308,21 +308,21 @@ header .mobile{
         background-color: white;
         margin-bottom: 32px;
         
-        h1{
-            text-align: center;
-            margin-top: 32px;
-            margin-bottom: 16px;
-            font-size: 2.6rem;
-            font-weight: bolder;
-        }
-        h2{
-            background-color: lightgray;
-            margin-bottom: 8px;
-            margin-left: 12px;
-            margin-right: 12px;
-            padding-left: 16px;
-            padding-top:16px;
-            padding-bottom: 24px;
-        }
+    }
+    .part4mobile h1{
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 2.6rem;
+        font-weight: bolder;
+    }
+    .part4mobile h2{
+        background-color: lightgray;
+        margin-bottom: 8px;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-left: 16px;
+        padding-top:16px;
+        padding-bottom: 24px;
     }
 }
