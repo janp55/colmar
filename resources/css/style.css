@@ -281,15 +281,19 @@ header .mobile{
         flex-direction: column;
         margin-right:16px;
         margin-left:16px;
-        div{
-            margin-left: 16px;
-            margin-top: 32px;
-            margin-bottom: 32px;
-            max-width: 64%;
-            line-height: 1.33;
-        }
-        h2{margin-bottom:12px;}
-        p{margin-bottom: 10px;}
+    }
+    .pt3one div, .pt3two div, .pt3three div{
+        margin-left: 16px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        max-width: 64%;
+        line-height: 1.33;
+    }
+    .pt3one h2, .pt3two h2, .pt3three h2{
+        margin-bottom: 12px;
+    }
+    .pt3one p, .pt3two p, .pt3three p{
+        margin-bottom: 10px;
     }
     .pt3one img, .pt3two img, .pt3three img{
         max-width: 100%;
