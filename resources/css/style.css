@@ -373,6 +373,7 @@ header .mobile{
     }
     .pt3one h2, .pt3two h2, .pt3three h2{
         margin-bottom: 12px;
+        max-width: 100%;
     }
     .pt3one p, .pt3two p, .pt3three p{
         margin-bottom: 10px;
