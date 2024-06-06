@@ -8,7 +8,7 @@ html{
     font-family: Helvetica;
 }
 /* General Container Syles */
-header, .part2Desktop, .part3Desktop, .part4desktop{
+header, .part2Desktop, .part3Desktop, .part4desktop, .part5desktop{
     width: 100%;
     margin: 0 auto; /*Center align */
     max-width: 1500px; 
@@ -210,6 +210,87 @@ header .mobile{
     }
     
 }
+/*Part 5 */
+.part5mobile{
+    display: none;
+}
+.part5desktop{
+    display: flex;
+    flex-direction: column;
+}
+.part5desktop h1{
+    text-align: center;
+    margin: 32px 0;
+}
+.pt5content{
+    display: flex;
+}
+.pt5right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.pt5left{
+    width: 60%;
+    margin: 0 24px 32px 24px;
+}
+.videoContainer{
+    display: flex;
+    width: 100%;
+}
+.videoContainer video{
+    width: 100%;
+    height: auto;
+}
+.urban{
+    margin-top: 24px;
+}
+.urban h2{
+    margin-bottom: 8px;
+}
+.pt5rightC1{
+    display:flex;
+    background-color: lightgray;
+    margin-right:10px;
+}
+.pt5rightC2{
+    display:flex;
+    margin-right:10px;
+}
+.pt5containerImg{
+    margin:16px;
+    width: 35%;
+}
+.pt5containerImg img{
+    max-width: 100%;
+    height: auto;
+}
+.pt5containerWords{
+    width: 65%;
+    align-content: center;
+}
+.pt5containerWords h2{
+    margin-bottom: 12px;
+}
+/* Footer Desktop*/
+.footerMobile{
+    display:none;
+}
+.footerDesktop{
+    display: flex;
+    padding-top: 16px;
+    padding-left: 24px;
+    border-top: 1px solid lightgray;
+    margin-bottom: 33px;
+    padding-right: 24px;
+}
+.footerDesktop .pright{
+    display: flex;
+    margin-left: auto; /*moves contents to the right as much as possible*/
+}
+.footerDesktop .pright .p2{
+    margin-right: 12px;
+}
 
 
 /* Mobile */
@@ -328,5 +409,33 @@ header .mobile{
         padding-left: 16px;
         padding-top:16px;
         padding-bottom: 24px;
+    }
+    /*Part 5 mobile */
+    .part5desktop{
+        display: none;
+    }
+    .part5mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+    .part5mobile h1{
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    /*Footer mobile*/
+    .footerDesktop{
+        display: none;
+    }
+    .footerMobile{
+        display:flex;
+        margin-top:24px;
+    }
+    .footerMobile p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 16px;
+        margin-top: 16px;
     }
 }
