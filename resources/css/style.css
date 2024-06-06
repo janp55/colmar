@@ -147,6 +147,7 @@ header .mobile{
     }
     h2{
         margin-bottom: 8px;
+        max-width: 100%;
     }
     p{
         margin-bottom: 8px;
