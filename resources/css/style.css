@@ -145,15 +145,15 @@ header .mobile{
         margin: 16px 0px;
         align-content: center;
     }
-    h2{
-        margin-bottom: 8px;
-        max-width: 100%;
-    }
     p{
         margin-bottom: 8px;
         line-height: 1.3;
         width: 100%;
     }
+}
+.part3one h2, .part3two h2, .part3three h2{
+    margin-bottom: 8px;
+    max-width: 100%;
 }
 .part3three{
     background-color: lightgray;
